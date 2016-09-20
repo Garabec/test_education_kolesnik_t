@@ -73,5 +73,19 @@
 
 </form>
 
+<h3> Задание 16 </h3>
+
+<form method="post" action="work7/index7.php">
+
+    <label   for="var1">Введите первое число</label> <br>
+    <input type="text" id="age" name="var1" value="" /><br>
+    <label   for="var2">Введите второе число</label><br>
+    <input type="text" id="age" name="var2" value="" /><br><br>
+
+
+    <input type="submit" value="Go..."  >
+
+</form>
+
 </body>
 </html>

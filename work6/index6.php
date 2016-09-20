@@ -8,19 +8,19 @@ if(($var2==0) && ($operator=='/')) {echo iconv("UTF-8","windows-1251", 'Ошиб
     switch ($operator) {
 
         case '+':
-            $res = $var1 + $var2;
+            $res = $var1 + $var2;echo iconv("UTF-8","windows-1251", "Результат расчета равен = " . $res);
             break;
         case '-':
-            $res = $var1 - $var2;
+            $res = $var1 - $var2;echo iconv("UTF-8","windows-1251", "Результат расчета равен = " . $res);
             break;
         case '*':
-            $res = $var1 * $var2;
+            $res = $var1 * $var2;echo iconv("UTF-8","windows-1251", "Результат расчета равен = " . $res);
             break;
         case '/':
-            $res = $var1 / $var2;
+            $res = $var1 / $var2;echo iconv("UTF-8","windows-1251", "Результат расчета равен = " . $res);
             break;
         case '%':
-            $res = $var1 % $var2;
+            $res = $var1 % $var2;echo iconv("UTF-8","windows-1251", "Результат расчета равен = " . $res);
             break;
 
         default:
@@ -28,7 +28,7 @@ if(($var2==0) && ($operator=='/')) {echo iconv("UTF-8","windows-1251", 'Ошиб
             break;
     }
 
-echo iconv("UTF-8","windows-1251", "Результат расчета равен = " . $res);
+
 };
 /**
  * Created by PhpStorm.
