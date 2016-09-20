@@ -9,7 +9,7 @@
 
 <h3> Задание 1 , 2 , 3 , 4 </h3>
 
-<form method="post" action="index1.php">
+<form method="post" action="work1/index1.php">
 
     <input type="submit" value="Go.... "  >
 
@@ -19,7 +19,7 @@
 
 <h3> Задание 5 , 6 , 7 , 8 </h3>
 
-<form method="post" action="index2.php">
+<form method="post" action="work2/index2.php">
 
     <label   for="age">Введите свой возраст</label>
     <input type="text" id="age" name="age" value="" />
@@ -29,7 +29,7 @@
 
 <h3> Задание 9 , 10 , 11 , 12 </h3>
 
-<form method="post" action="index3.php">
+<form method="post" action="work3/index3.php">
 
     <label   for="day">Введите день недели</label>
     <input type="text" id="age" name="day" value="" />
@@ -39,7 +39,7 @@
 
 <h3> Задание 13 </h3>
 
-<form method="post" action="index4.php">
+<form method="post" action="work4/index4.php">
 
     <label   for="length">Введите длину участка</label> <br>
     <input type="text" id="age" name="length" value="" /><br>
@@ -52,7 +52,7 @@
 
 <h3> Задание 14 </h3>
 
-<form method="post" action="index5.php">
+<form method="post" action="work5/index5.php">
 
     <input type="submit" value="Go.... "  >
 
@@ -60,7 +60,7 @@
 
 <h3> Задание 15 </h3>
 
-<form method="post" action="index6.php">
+<form method="post" action="work6/index6.php">
 
     <label   for="var1">Введите первое число</label> <br>
     <input type="text" id="age" name="var1" value="" /><br>
