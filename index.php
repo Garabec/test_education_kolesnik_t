@@ -87,5 +87,20 @@
 
 </form>
 
+<h3> Задание 17 , 18 </h3>
+
+<div>
+№1. $a = '78' ; $b=78; - проверка равенства <br>
+№2. $a = '78' ; $b=78; - проверка эквивалентности <br>
+
+</div>
+
+<form method="post" action="work8/index8.php">
+
+    <input type="submit" value="Go..."  >
+
+</form>
+
+
 </body>
 </html>
