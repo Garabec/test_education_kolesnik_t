@@ -210,5 +210,70 @@
 
     </form>
 </div>
+
+<div class="aligin">
+
+    <h4> Задание №19 </h4>
+
+    <form method="post" action="index319.php">
+
+
+
+        <input type="submit" value="Go..."  >
+
+    </form>
+</div>
+
+<div class="aligin">
+
+    <h4> Задание №20 </h4>
+
+    <form method="post" action="index320.php">
+
+
+
+        <input type="submit" value="Go..."  >
+
+    </form>
+</div>
+<div class="aligin">
+
+    <h4> Задание №21 </h4>
+
+    <form method="post" action="index321.php">
+
+
+
+        <input type="submit" value="Go..."  >
+
+    </form>
+</div>
+
+<div class="aligin">
+
+    <h4> Задание №22 </h4>
+
+    <form method="post" action="index322.php">
+
+
+
+        <input type="submit" value="Go..."  >
+
+    </form>
+</div>
+<div class="aligin">
+
+    <h4> Задание №23 </h4>
+
+    <form method="post" action="index323.php">
+
+        <label   for="var1">Введите число</label> <br>
+        <input type="text" id="var_1" name="var1" value="" /><br><br>
+
+
+        <input type="submit" value="Go..."  >
+
+    </form>
+</div>
 </body>
 </html>
