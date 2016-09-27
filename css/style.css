@@ -1,1 +1,9 @@
-.name h4{ font-style: normal ; font-size:20px ; }
+.aligin { margin: 10px 10px 10px 10px;
+    padding: 10px 0px 0px 10px;
+    float:left;
+    height: 100px;
+    width: 300px;  }
+.head{ float: right; height: 20px;
+    width:100%;   border-top: groove        }
+
+
