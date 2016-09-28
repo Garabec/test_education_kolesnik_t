@@ -21,8 +21,8 @@ if (!(is_numeric($var1))) { echo" ВВедите число <br>";} else {
     while ($var1 != 0) {
 
 
-        $res = $res + $var1 % 10;
-        $var1 = $var1 / 10;
+        $res += $var1 % 10;
+        $var1 /=  10;
 
 
     };
@@ -45,7 +45,7 @@ if (!(is_numeric($var1))) { echo" ВВедите число";} else {
 
     for ($i = 0; $i < strlen($var1); $i++) {
 
-        $res = $res + substr($var1, $i, 1);
+        $res +=substr($var1, $i, 1);
 
     };
 

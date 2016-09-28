@@ -21,17 +21,25 @@ $var1=$_POST['var1'];
 
 
 $mas=array(4, 2, 5, 19, 13, 0, 10);
+
+
+if (!(is_numeric($var1))) { echo" ВВедите число";} else {
+
 $max_key=count($mas);
 
 foreach ($mas as $key=> $temp) {
 
-    if ($temp==$var1) {
-        echo 'Есть <br>'; break;
+    if ($temp == $var1) {
+        echo 'Есть <br>';
+        break;
     };
 
-    if (($max_key-1)==$key){ echo 'Нет <br>'; break;}
+    if (($max_key - 1) == $key) {
+        echo 'Нет <br>';
+        break;
+    }
 
-
+}
 }
 ?>
 
