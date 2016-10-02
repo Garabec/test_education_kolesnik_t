@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -9,7 +9,7 @@
 
 <h3> Задание 1 , 2 , 3 , 4 </h3>
 
-<form method="post" action="work1/index1.php">
+<form method="post" action="1.php">
 
     <input type="submit" value="Go.... "  >
 
@@ -19,7 +19,7 @@
 
 <h3> Задание 5 , 6 , 7 , 8 </h3>
 
-<form method="post" action="work2/index2.php">
+<form method="post" action="2.php">
 
     <label   for="age">Введите свой возраст</label>
     <input type="text" id="age" name="age" value="" />
@@ -29,7 +29,7 @@
 
 <h3> Задание 9 , 10 , 11 , 12 </h3>
 
-<form method="post" action="work3/index3.php">
+<form method="post" action="3.php">
 
     <label   for="day">Введите день недели</label>
     <input type="text" id="age" name="day" value="" />
@@ -39,7 +39,7 @@
 
 <h3> Задание 13 </h3>
 
-<form method="post" action="work4/index4.php">
+<form method="post" action="4.php">
 
     <label   for="length">Введите длину участка</label> <br>
     <input type="text" id="age" name="length" value="" /><br>
@@ -52,7 +52,7 @@
 
 <h3> Задание 14 </h3>
 
-<form method="post" action="work5/index5.php">
+<form method="post" action="5.php">
 
     <input type="submit" value="Go.... "  >
 
@@ -60,7 +60,7 @@
 
 <h3> Задание 15 </h3>
 
-<form method="post" action="work6/index6.php">
+<form method="post" action="6.php">
 
     <label   for="var1">Введите первое число</label> <br>
     <input type="text" id="age" name="var1" value="" /><br>
@@ -75,7 +75,7 @@
 
 <h3> Задание 16 </h3>
 
-<form method="post" action="work7/index7.php">
+<form method="post" action="7.php">
 
     <label   for="var1">Введите первое число</label> <br>
     <input type="text" id="age" name="var1" value="" /><br>
@@ -95,7 +95,7 @@
 
 </div>
 
-<form method="post" action="work8/index8.php">
+<form method="post" action="8.php">
 
     <input type="submit" value="Go..."  >
 
@@ -113,7 +113,7 @@
     .
 </div>
 
-<form method="post" action="work9/index9.php">
+<form method="post" action="9.php">
 
     <input type="submit" value="Go..."  >
 

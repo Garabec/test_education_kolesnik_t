@@ -17,7 +17,7 @@ $var2=$_POST['var2'];
 
 
 
-if ((!(is_numeric($var1)))&&(!(is_numeric($var2)))) { echo" ВВедите число <br>";} else {
+if ((!(is_numeric($var1)))||(!(is_numeric($var2)))) { echo" ВВедите число <br>";} else {
 
     $var1=(int)$var1;
     $var2=(int)$var2;
@@ -45,7 +45,7 @@ $var2=$_POST['var2'];
 
 
 $res = 0;
-if ((!(is_numeric($var1)))&&(!(is_numeric($var2)))) { echo" ВВедите число";} else {
+if ((!(is_numeric($var1)))||(!(is_numeric($var2)))) { echo" ВВедите число";} else {
 
     $var1=(string)$var1;
     $var2=(string)$var2;

@@ -15,7 +15,7 @@
 <div class="aligin">
 <h4> Задание №1 </h4>
 
-<form method="post" action="work/index31.php">
+<form method="post" action="1.php">
 
     <input type="submit" value="Go.... "  >
 
@@ -26,7 +26,7 @@
 <div class="aligin">
 <h4> Задание №2 </h4>
 
-<form method="post" action="work/index32.php">
+<form method="post" action="2.php">
 
     <input type="submit" value="Go.... "  >
 
@@ -36,7 +36,7 @@
 <div class="aligin">
 <h4> Задание №3 </h4>
 
-<form method="post" action="work/index33.php">
+<form method="post" action="3.php">
 
     <input type="submit" value="Go.... "  >
 
@@ -50,7 +50,7 @@
 <div class="aligin">
 <h4> Задание №4 </h4>
 
-<form method="post" action="work/index34.php">
+<form method="post" action="4.php">
 
     <input type="submit" value="Go.... "  >
 
@@ -60,7 +60,7 @@
 <div class="aligin">
 <h4> Задание №5 </h4>
 
-<form method="post" action="work/index35.php">
+<form method="post" action="5.php">
 
     <input type="submit" value="Go.... "  >
 
@@ -70,7 +70,7 @@
 <div class="aligin">
 <h4> Задание №6 </h4>
 
-<form method="post" action="work/index36.php">
+<form method="post" action="6.php">
 
     <input type="submit" value="Go.... "  >
 
@@ -80,7 +80,7 @@
 <div class="aligin">
 <h4> Задание №7 </h4>
 
-<form method="post" action="work/index37.php">
+<form method="post" action="7.php">
 
     <input type="submit" value="Go.... "  >
 
@@ -90,7 +90,7 @@
 <div class="aligin">
 <h4> Задание №8 </h4>
 
-<form method="post" action="work/index38.php">
+<form method="post" action="8.php">
 
     <input type="submit" value="Go.... "  >
 
@@ -100,7 +100,7 @@
 <div class="aligin">
 <h4> Задание №9 </h4>
 
-<form method="post" action="work/index39.php">
+<form method="post" action="9.php">
 
     <input type="submit" value="Go.... "  >
 
@@ -110,7 +110,7 @@
 <div class="aligin">
 <h4> Задание №10 </h4>
 
-<form method="post" action="work/index310.php">
+<form method="post" action="10.php">
 
     <input type="submit" value="Go.... "  >
 
@@ -120,7 +120,7 @@
 <div class="aligin">
 <h4> Задание №11 </h4>
 
-<form method="post" action="work/index311.php">
+<form method="post" action="11.php">
 
     <input type="submit" value="Go.... "  >
 
@@ -130,7 +130,7 @@
 <div class="aligin">
 <h4> Задание №12 </h4>
 
-<form method="post" action="work/index312.php">
+<form method="post" action="12.php">
 
     <input type="submit" value="Go.... "  >
 
@@ -140,7 +140,7 @@
 <div class="aligin">
 <h4> Задание №13 </h4>
 
-<form method="post" action="work/index313.php">
+<form method="post" action="13.php">
 
     <input type="submit" value="Go.... "  >
 
@@ -150,7 +150,7 @@
 <div class="aligin">
 <h4> Задание №14 </h4>
 
-<form method="post" action="work/index314.php">
+<form method="post" action="14.php">
 
     <label   for="var1">Введите число</label> <br>
     <input type="text" id="var_1" name="var1" value="" /><br><br>
@@ -164,7 +164,7 @@
 <div class="aligin">
 <h4> Задание №15 </h4>
 
-<form method="post" action="work/index315.php">
+<form method="post" action="15.php">
 
 
 
@@ -176,7 +176,7 @@
 <div class="aligin">
     <h4> Задание №16 </h4>
 
-    <form method="post" action="work/index316.php">
+    <form method="post" action="16.php">
 
 
 
@@ -189,7 +189,7 @@
 
     <h4> Задание №17 </h4>
 
-    <form method="post" action="work/index317.php">
+    <form method="post" action="17.php">
 
 
 
@@ -202,7 +202,7 @@
 
     <h4> Задание №18 </h4>
 
-    <form method="post" action="work/index318.php">
+    <form method="post" action="18.php">
 
 
 
@@ -215,7 +215,7 @@
 
     <h4> Задание №19 </h4>
 
-    <form method="post" action="work/index319.php">
+    <form method="post" action="19.php">
 
 
 
@@ -228,7 +228,7 @@
 
     <h4> Задание №20 </h4>
 
-    <form method="post" action="work/index320.php">
+    <form method="post" action="20.php">
 
 
 
@@ -240,7 +240,7 @@
 
     <h4> Задание №21 </h4>
 
-    <form method="post" action="work/index321.php">
+    <form method="post" action="21.php">
 
 
 
@@ -253,7 +253,7 @@
 
     <h4> Задание №22 </h4>
 
-    <form method="post" action="work/index322.php">
+    <form method="post" action="22.php">
 
 
 
@@ -265,7 +265,7 @@
 
     <h4> Задание №23 </h4>
 
-    <form method="post" action="work/index323.php">
+    <form method="post" action="23.php">
 
         <label   for="var1">Введите число</label> <br>
         <input type="text" id="var_1" name="var1" value="" /><br><br>
@@ -280,7 +280,7 @@
 
     <h4> Задание №24 </h4>
 
-    <form method="post" action="work/index324.php">
+    <form method="post" action="24.php">
 
         <label   for="var1">Введите  число </label> <br>
         <input type="text" id="var_1" name="var1" value="2047477647" /><br><br>
@@ -296,7 +296,7 @@
 
     <h4> Задание №25 </h4>
 
-    <form method="post" action="work/index325.php">
+    <form method="post" action="25.php">
 
 
         <input type="submit" value="Go..."  >
@@ -307,7 +307,7 @@
 
     <h4> Задание №26 </h4>
 
-    <form method="post" action="work/index326.php">
+    <form method="post" action="26.php">
 
 
         <input type="submit" value="Go..."  >
@@ -320,7 +320,7 @@
 
     <h4> Задание №27 </h4>
 
-    <form method="post" action="work/index327.php">
+    <form method="post" action="27.php">
 
 
         <input type="submit" value="Go..."  >
@@ -331,7 +331,7 @@
 
     <h4> Задание №28 </h4>
 
-    <form method="post" action="work/index328.php">
+    <form method="post" action="28.php">
 
 
         <input type="submit" value="Go..."  >
