@@ -14,12 +14,13 @@
 $mas=array(4, 2, 5, 19, 13, 0, 10);
 
 $max_key=count($mas);
-
+$i=0;
 foreach ($mas as $key=> $temp) {
+    $i++;
 };
 
 echo 'Подсчет с помощью count : '.$max_key.'<br>';
-echo 'Подсчет с помощью foreach : '.$key.'   (меньше на 1 так как ключ массива начинается с нуля) <br>';
+echo 'Подсчет с помощью foreach : '.$i.'   <br>';
 
 ?>
 

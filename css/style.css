@@ -1,0 +1,20 @@
+.aligin { margin: 0px 0px 0px 0px;
+    padding: 10px 0px 0px 10px;
+    float:left;
+    height: 300px;
+    width: 300px;  }
+
+.head{ float: left; height: 400px;
+    width:100%;   border-top: groove; padding: 0px 0px 0px 0px;margin: 0px 0px 0px 0px; }
+
+.foto{ margin: 10px 10px 10px 10px;
+    padding: 10px 0px 0px 10px;
+    float:left;
+    height: 300px;
+    width: 300px; }
+
+.foto img{ margin: 10px 10px 10px 10px;
+    padding: 10px 0px 0px 10px; height: 300px;
+    width: 300px;  }
+
+
