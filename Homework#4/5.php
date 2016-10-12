@@ -4,7 +4,7 @@ $dir=$_POST['dir'];
 $word=$_POST['word'];
 
 
-
+ 
 function list_dir($var_dir,$var_word){
 
 $mas=scandir($var_dir);

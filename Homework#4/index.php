@@ -55,7 +55,7 @@
 
         <input name="userfile" type="file" />
 
-
+        <br><br>
         <input type="submit" value="Go.... "  >
 
     </form>
@@ -70,7 +70,7 @@
 
 
     <label   for="dir">Введите путь директории</label> <br>
-    <input type="text" id="dir" name="dir" value="" /><br><br>
+    <input type="text" id="dir" name="dir" value="c:\xampp" /><br><br>
 
 
 
@@ -91,10 +91,10 @@
     <form method="post" action="5.php" enctype="multipart/form-data">
 
         <label   for="word">Введите слово</label> <br>
-        <input type="text" id="word" name="word" value="" /><br><br>
+        <input type="text" id="word" name="word" value=".bat" /><br><br>
 
         <label   for="dir">Введите путь директории</label> <br>
-        <input type="text" id="dir" name="dir" value="" /><br><br>
+        <input type="text" id="dir" name="dir" value="c:\xampp" /><br><br>
 
 
 
@@ -107,7 +107,7 @@
 
 <div class="aligin">
 
-    <h4> Задание №6 </h4>
+    <h4> Задание -мультизагрузка фото №6 </h4>
 
     <form method="post" action="6.php" enctype="multipart/form-data">
 
@@ -117,7 +117,7 @@
 
         <input name="userfile[]" type="file" multiple  />
 
-
+<br><br>
         <input type="submit" value="Go.... "  >
 
     </form>
@@ -127,12 +127,11 @@
 
 <div class="aligin">
 
-<h4> Задание №7 </h4>
+<h4> Задание №7 - Комментарии добавление удаление рейтинг </h4>
 
 <form method="post" action="7.php">
 
-    <label   for="text1">Напишите комментарий</label> <br>
-    <p><textarea rows="5" cols="30" name="text1"></textarea></p>
+
 
 
     <input type="submit" value="Go.... "  >
@@ -146,8 +145,7 @@
 
     <form method="post" action="8.php">
 
-        <label   for="text1">Напишите комментарий</label> <br>
-        <p><textarea rows="5" cols="30" name="text1"></textarea></p>
+
 
 
         <input type="submit" value="Go.... "  >

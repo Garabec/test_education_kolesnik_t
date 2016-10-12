@@ -9,68 +9,247 @@
 
 <body>
 
-
-
-
 <?php
 
-$swearword=array('сука','падла');
+
+/*
+Задания:
+1) Добавить чекбокс "показывать ли имейл"
+2) comment rating +/-
+3) удаление
+
+*/
+
+// 'copypaste' from functions.php
+require 'function.php';
+
+$flashMessage = get('flashMessage');
+
+$swearword=array('сука','падла'); //массив ругательств
+
+// if form submitted
+if (requestIsPost()) {
+// if data ok
+    if (formIsValid()) {
+
+//settype($number,'int');
+
+        $comment = $_POST;
+        $comment['datetime'] = date('Y-m-d H:i:s');
+        $comment['publish_email'] = checkboxIsChecked('publish_email');
+        $comment['rating']='Рейтинг ';
+        $comment['number_rating']=0;
+        $comment = serialize($comment);
+
+        foreach ($swearword as $temp_swearword){
 
 
-if (!file_exists( 'C:\download\comm.txt' )) {
 
-    $fileopen = fopen('C:\download\comm.txt', 'w'); //открываем файл
+            if( mb_stristr($comment,$temp_swearword) ){  $comment = unserialize($comment);  $comment['message']='Некорректный комментарий';$comment = serialize($comment); break;
 
-    fclose($fileopen);
+
+            } ;
+        };
+
+
+
+        save($comment);
+
+// $flashMessage = urlencode('Ok');
+        $flashMessage = 'Ok';
+
+        redirect('/8.php?flashMessage=' . $flashMessage);
+    }
+
+    $flashMessage = 'Fill the fields, please';
+
 }
 
 
-    $comm = $_POST['text1'];
+if (get('action') == 'rate_up') {
 
-foreach ($swearword as $temp_swearword){
-
-if( mb_stristr($comm,$temp_swearword) ){$comm='Некорректный комментарий'; break;
+// открыть файл, взять по ключу коммент, увеличть рейт, записать все в файл
 
 
-} ;
-};
+//----------------увеличение рейтинга-------------------------------------------
+    if (get('key')!=NULL){
 
 
 
+        $commentsRaw = file('comm.txt');
 
-    file_put_contents('C:\download\comm.txt', $comm . "\n", FILE_APPEND);
+        if($commentsRaw) {
 
-    $mas = file('C:\download\comm.txt'); //загружаем в массив файл
-
-
-    foreach ($mas as $temp_var) {
+            $comments = unserialize($commentsRaw[get('key')]);
 
 
-        echo '<div class="fort"> ';
-        echo '<p>' . $temp_var . '</p>';
-        echo '</div>';
+            $comments['number_rating']++;
 
 
+
+            $commentsRaw[get('key')] = serialize($comments);
+
+
+
+
+            $fileopen = fopen('comm.txt', 'w+');
+
+
+            foreach ($commentsRaw as $temp_comm) {
+
+                $temp_comm = rtrim($temp_comm);
+
+                file_put_contents(
+                    'comm.txt',
+                    $temp_comm . PHP_EOL,
+                    FILE_APPEND);
+
+            }
+        }
+
+
+
+    };
+//----------------------------увеличение рейтинга-----------------------------------------
+
+//-----------------------------удаление коментария-----------------------------------------
+    if (get('key_delete')!=NULL) {
+
+        $commentsRaw = file('comm.txt');
+
+
+
+        unset($commentsRaw[get('key_delete')]);
+
+
+
+        $fileopen = fopen('comm.txt', 'w+');
+
+
+        foreach ($commentsRaw as $temp_comm) {
+
+            $temp_comm = rtrim($temp_comm);
+
+            file_put_contents(
+                'comm.txt',
+                $temp_comm . PHP_EOL,
+                FILE_APPEND);
+
+        }
     }
+//-----------------------------удаление коментария----------------------------------------
+
+}
+
+$commentsRaw = file('comm.txt');
+
+$comments = [];
 
 
-    $fileopen = fopen('C:\download\comm.txt', 'w');
-
-    fputs($fileopen, implode(" ", $mas));
-
-    fclose($fileopen);
+foreach ($commentsRaw as $comment) {
+    $comments[] = unserialize($comment);
+}
 
 
 
+
+// todo ??
+// array_walk($commentsRaw, function(&$element) {
+// return unserialize($element);
+// });
+
+// print_r($commentsRaw);
 
 ?>
 
-<form method="post" action="8.php">
-
-    <label   for="text1">Напишите текст</label> <br>
-    <p><textarea rows="5" cols="30" name="text1"></textarea></p>
 
 
-    <input type="submit" value="Go.... "  >
 
+
+<h1>Comments</h1>
+
+<b><?=$flashMessage?></b>
+<form method='post'>
+    <div class="main" >
+        <div class="form" >
+            <div class="field">
+                <label for='username'>Username</label>
+                <input type='text' value='<?=post('username')?>' name='username' id='username'>
+                <br><br>
+            </div>
+
+            <div class="field">
+                <label for='email'>Email</label>
+                <input type='email' value='<?=post('email')?>' id='email' name='email'>
+                <br><br>
+
+            </div>
+
+            <div class="field">
+
+
+                <label for='message'>Message</label>
+                <textarea name='message' id='message' rows="5" cols="22"><?=post('message')?></textarea>
+                <br><br>
+
+            </div>
+
+            <div class="field">
+
+
+
+                <label for='publish_email'>Показывать Email </label>
+                <div class="checkbox">
+                    <input type='checkbox' name='publish_email' id="publish_email">
+                    <button>Go</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </form>
+
+<hr>
+
+
+
+
+
+
+
+<?php foreach ($comments as $key => $comment) : ?>
+
+
+    <b> <?=$comment['username']?></b>
+
+    <?=$comment['datetime']?>
+    <?php if($comment['publish_email']){echo $comment['email'] ; } ?>
+
+    <?=$comment['rating']?>
+
+    <?=$comment['number_rating'].'&nbsp;&nbsp;&nbsp;'?>
+
+    <a href='/Homework%234/8.php?action=rate_up&amp;key=<?=$key?>'>+</a>
+    <?='&nbsp;&nbsp;&nbsp;'?>
+    <br>
+    <a href='/Homework%234/8.php?action=rate_up&amp;key_delete=<?=$key?>'>Удалить комментарий</a>
+
+    <br>
+
+    <?=$comment['message']?>
+    <hr>
+
+<?php  endforeach; ?>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

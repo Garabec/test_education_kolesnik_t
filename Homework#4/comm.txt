@@ -1,0 +1,3 @@
+a:7:{s:8:"username";s:9:"Тима ";s:5:"email";s:16:"dion26@yandex.ru";s:7:"message";s:12:"привет";s:8:"datetime";s:19:"2016-10-12 18:22:40";s:13:"publish_email";b:0;s:6:"rating";s:15:"Рейтинг ";s:13:"number_rating";i:2;}
+a:7:{s:8:"username";s:9:"Тима ";s:5:"email";s:16:"dion26@yandex.ru";s:7:"message";s:47:"Некорректный комментарий";s:8:"datetime";s:19:"2016-10-12 18:45:01";s:13:"publish_email";b:0;s:6:"rating";s:15:"Рейтинг ";s:13:"number_rating";i:0;}
+a:7:{s:8:"username";s:9:"Тима ";s:5:"email";s:16:"dion26@yandex.ru";s:7:"message";s:12:"привет";s:8:"datetime";s:19:"2016-10-12 18:45:08";s:13:"publish_email";b:0;s:6:"rating";s:15:"Рейтинг ";s:13:"number_rating";i:0;}

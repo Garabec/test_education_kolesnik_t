@@ -2,7 +2,7 @@
 
 $dir=$_POST['dir'];
 
-var_dump($dir);
+
 
 function list_dir($var_dir){
 

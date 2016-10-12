@@ -7,8 +7,8 @@
 .head{ float: left; height: 400px;
     width:100%;   border-top: groove; padding: 0px 0px 0px 0px;margin: 0px 0px 0px 0px; }
 
-.foto{ margin: 10px 10px 10px 10px;
-    padding: 10px 0px 0px 10px;
+.foto{ margin: 20px 20px 20px 20px;
+    padding: 10px 10px 10px 10px;
     float:left;
     height: 300px;
     width: 300px; }
@@ -18,3 +18,11 @@
     width: 300px;  }
 
 
+
+.field {clear:both;  text-align:right;}
+
+label {float:left;}
+
+.form {float:left; width:300px}
+.main {float:left; width:100% ;margin: 10px 10px 50px 10px; }
+.checkbox {float:left;}

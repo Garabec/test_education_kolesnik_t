@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="Homework#4/css/style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -20,12 +20,12 @@ function getCommonWords($a,$b){
 
 
 $gas=explode(" ",$a);
-
+$mas=explode(" ",$b);
 
 foreach ( $gas as $key=>$temp_val) {
 
 
- if( stristr($b, $temp_val)===false){ unset($gas[$key]);}
+ if( !in_array($temp_val, $mas)){ unset($gas[$key]);}
 
 
 }
