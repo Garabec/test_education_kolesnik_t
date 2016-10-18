@@ -66,7 +66,7 @@ if(requestIsPost()){
 <div class="container" >
 
         <div class="col-lg-4"  >
-<form  method="post" action="/index.php?page=login" class="form-group">
+<form method="post" action="/index.php?page=login" class="form-group">
     <div class="row1">
 
 

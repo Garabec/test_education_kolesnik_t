@@ -153,7 +153,7 @@ $comments[] = unserialize($comment);
     <b><?=$flashMessage?></b>
 
     <div class="col-lg-4"  >
-        <form  method="post" action="/index.php?page=comment" class="form-group">
+        <form method="post" action="/index.php?page=comment" class="form-group">
             <div class="row1">
 
                 <?php  if(isset($_SESSION['user'])): ?>
