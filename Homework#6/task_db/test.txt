@@ -1,0 +1,29 @@
+Название стиля, средняя цена, мин цена, количество книг----------------------------------------------------------------------------------------------
+
+SELECT style.name as style_book , MIN(book.price) as min_price, AVG(book.price) as avg_price, count(*) as count_book FROM style LEFT JOIN book 
+ON book.style_id=style.id GROUP BY style.name;
+
+Авторы и их стили-------------------------------------------------------------------------------------------------------------------------------------
+
+SELECT DISTINCT author.first_name ,style.name AS style FROM author ,book,book_author,style
+ WHERE  author.id=book_author.author_id AND book_author.book_id=book.id AND style.id=book.style_id  
+order by author.first_name  ; 
+
+SELECT DISTINCT author.first_name ,style.name AS style FROM author JOIN book JOIN book_author JOIN style
+ON  (author.id=book_author.author_id AND book_author.book_id=book.id AND style.id=book.style_id  
+) order by author.first_name ; 
+
+
+Самая дорогая книга-----------------------------------------------------------------------------------------------------------------------------------
+
+SELECT title , MAX(price) FROM book WHERE price=(SELECT MAX(price) FROM book);
+
+SELECT title , price FROM book ORDER BY  price DESC LIMIT 1;
+
+
+Самая дешевая :)
+
+SELECT title , MIN(price) FROM book WHERE price=(SELECT MIN(price) FROM book);
+
+SELECT title , price FROM book ORDER BY  price  LIMIT 1;
+
