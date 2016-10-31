@@ -1,0 +1,16 @@
+
+¬ Ѕƒ из предыдущего зан€ти€ создать таблицу country, в которой будут хранитьс€ данные о странах: название, сокращенное название (например ua, uk, es), площадь территории, численность населени€, континент, президент
+
+
+
+
+CREATE TABLE country (
+ id INT AUTO_INCREMENT,
+ name VARCHAR(30),
+ shot_name CHAR(2), 
+ land_area  INT,
+ population INT,
+ continent VARCHAR(15),
+ president VARCHAR(50),
+ PRIMARY KEY (id)
+);

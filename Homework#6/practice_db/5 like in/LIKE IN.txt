@@ -1,0 +1,6 @@
+“аблица country: получить страны, пор€дковые номера которых либо 5, либо 7, либо 2. ѕолучить страны, названи€ которых содержат символ n.
+
+
+
+SELECT*FROM country WHERE id IN(5,7,2);
+SELECT*FROM country WHERE name LIKE '%n%';

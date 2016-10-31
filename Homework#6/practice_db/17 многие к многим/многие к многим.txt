@@ -1,0 +1,32 @@
+Создать таблицу с языками language (например English, Ukrainian, ...). Связать таблицу country с таблицей language, моделируя используемые языки в разных странах. Например, в Украине чаще остальных используют украинский и русский язык. Таким образом необходимо получить связь многие ко многим.
+
+
+
+CREATE TABLE speaking (
+ id INT AUTO_INCREMENT,
+ language_id INT,
+ country_id  INT,
+ PRIMARY KEY (id)
+)CHARACTER SET utf8 COLLATE=utf8_unicode_ci;
+
+
+ALTER TABLE speaking ADD INDEX(language_id);
+ALTER TABLE speaking ADD INDEX(country_id);
+
+
+CREATE TABLE language (
+ id INT AUTO_INCREMENT,
+ name VARCHAR(30),
+ PRIMARY KEY (id)
+)CHARACTER SET utf8 COLLATE=utf8_unicode_ci;
+
+
+ALTER TABLE speaking
+ADD CONSTRAINT l_speaking_id
+FOREIGN KEY (language_id) REFERENCES language(id)
+ON UPDATE CASCADE ON DELETE CASCADE;
+
+ALTER TABLE speaking
+ADD CONSTRAINT c_speaking_id
+FOREIGN KEY (country_id) REFERENCES country(id)
+ON UPDATE CASCADE ON DELETE CASCADE;

@@ -1,0 +1,5 @@
+Таблица country: добавить индекс по полю continent_id
+
+
+
+ALTER TABLE country ADD INDEX(continent_id);

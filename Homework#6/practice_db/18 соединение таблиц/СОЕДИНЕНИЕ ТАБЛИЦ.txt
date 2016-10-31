@@ -1,0 +1,3 @@
+Соединить таблицы country, continent для получения названий стран и названий континентов
+
+SELECT country.name  AS country ,continent.name AS continent FROM country,continent WHERE country.continent_id=continent.id;

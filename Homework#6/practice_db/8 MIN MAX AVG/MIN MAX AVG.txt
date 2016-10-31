@@ -1,0 +1,6 @@
+“аблица country: получить максимальное и минимальное население по странам. ѕолучить среднее население по ≈вропейским странам. ѕолучить общее население всех стран.
+
+
+SELECT MIN(population) as min ,MAX(population) as max FROM country;
+SELECT AVG(population) as AVG  FROM country WHERE continent='Eurasia';
+SELECT SUM(population) as SUM  FROM country ;

@@ -1,0 +1,7 @@
+ƒобавить в таблицу country поле дл€ премьер-министра страны и заполнить записи значени€ми. ¬ывести на экран таблицу, в которой будет представлены все президенты и все премьер-министры всех стран в одну колонку.
+
+ALTER TABLE country ADD premier VARCHAR(30);
+
+SELECT president FROM country
+UNION
+SELECT premier FROM country;

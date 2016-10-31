@@ -1,0 +1,3 @@
+Таблица country: сгруппировать записи по названию континентов.
+
+SELECT*FROM country GROUP BY continent;

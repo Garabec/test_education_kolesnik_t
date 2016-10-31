@@ -1,0 +1,5 @@
+Получить все записи всех полей из таблицы country. Получить список названий стран. Получить список названий стран и их президентов.
+
+SELECT*FROM country ;
+SELECT name FROM country;
+SELECT name,president FROM country;

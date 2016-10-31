@@ -1,0 +1,6 @@
+“аблица country: получить страны, пор€дковые номера которых больше 3 и не меньше 7. ѕолучить страны, в которых население больше 20 миллионов и пор€дковые номера которых меньше 7. ѕолучить информацию о стране по конкретному названию. ѕолучить страны јзии
+
+SELECT name FROM country WHERE id>3 AND id<7;
+SELECT name FROM country WHERE population>20000000 AND id<7;
+SELECT*FROM country WHERE name='Japan';
+SELECT name FROM country WHERE continent='Eurasia';

@@ -1,0 +1,17 @@
+Добавить в таблицу languages новые языки. Получить выборку тех языков, которые не используются в имеющихся в базе данных странах. Использовать оператор сравнения IS NULL
+
+insert into language (name) values ('Japanese');
+insert into language (name) values ('Hindi');
+insert into language (name) values ('Hungarian');
+insert into language (name) values ('Georgian');
+
+
+SELECT country.name  AS country ,language.name AS language FROM country 
+RIGHT JOIN language ON country.continent_id=language.id;
+
+
+
+SELECT country.name  AS country ,language.name AS language FROM country 
+RIGHT JOIN language ON country.continent_id=language.id WHERE country.name IS NULL;
+
+

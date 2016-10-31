@@ -1,0 +1,5 @@
+
+Выполнить предыдущее задание при помощи JOIN
+
+
+SELECT country.name  AS country ,continent.name AS continent FROM country JOIN continent ON country.continent_id=continent.id; 

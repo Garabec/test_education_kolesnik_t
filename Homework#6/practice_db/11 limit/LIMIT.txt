@@ -1,0 +1,5 @@
+Получить последнюю добавленную запись из таблицы country
+
+
+
+SELECT*FROM country ORDER BY id DESC LIMIT 1;

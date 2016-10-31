@@ -1,0 +1,4 @@
+Таблица country: получить континенты, среднее население по странам которых которых превышает 40 000 000 
+
+
+SELECT continent ,AVG(population) FROM country GROUP BY continent HAVING AVG(population)>400000000;

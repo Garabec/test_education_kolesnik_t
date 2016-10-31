@@ -1,0 +1,3 @@
+Таблица country: создать новую колонку continent_id, которя имеет тип TINYINT и значения по умолчанию NULL.
+
+ALTER TABLE country ADD continent_id TINYINT DEFAULT NULL;

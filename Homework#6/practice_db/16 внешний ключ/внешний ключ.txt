@@ -1,0 +1,20 @@
+Создать новую таблицу continent, в которой будут сохранены названия континентов. Связать таблицу continent с таблицей country по полю continent_id при помощи внешнего ключа. После этого удалить из таблицы поле, которое явно указывает название континента.
+
+
+
+
+CREATE TABLE continent (
+id TINYINT(2) AUTO_INCREMENT,
+name VARCHAR (30),
+PRIMARY KEY (id))
+CHARACTER SET utf8 COLLATE utf8_unicode_ci;
+
+
+ALTER TABLE country
+ADD CONSTRAINT c_continent_id
+FOREIGN KEY (continent_id)
+REFERENCES continent(id)
+ON DELETE CASCADE
+ON UPDATE CASCADE;
+
+ALTER TABLE country DROP COLUMN continent;

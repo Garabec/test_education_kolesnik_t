@@ -1,0 +1,7 @@
+Таблица country: получить полную таблицу упорядоченную по названию страны. Получить полную таблицу упорядоченную по названию континентов и по названию страны.
+
+
+SELECT*FROM country ORDER BY name;
+
+SELECT*FROM country ORDER BY continent ASC, name ASC;
+

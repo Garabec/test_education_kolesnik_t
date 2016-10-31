@@ -1,0 +1,3 @@
+Удалить одну из записей из таблицы country
+
+DELETE FROM country WHERE id=10;

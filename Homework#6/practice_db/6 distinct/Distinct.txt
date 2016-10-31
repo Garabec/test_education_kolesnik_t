@@ -1,0 +1,8 @@
+Таблица country: получить выборку всех записей таблицы, назначив псевдонимы в виде сокращенных названий столбцов. Получить список континентов без повторений.
+
+
+SELECT id,name as nm, shot_name as sn,land_area as la,population as po,continent as con,president as pt 
+FROM country ;
+
+
+SELECT DISTINCT continent FROM country;

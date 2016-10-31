@@ -1,0 +1,15 @@
+
+Вставить в таблицу country 10 записей
+
+
+
+insert into country (name, shot_name, land_area, population, continent, president) values ('Botswana', 'BW', 465315, 1445348190, 'Africa', 'Christine King');
+insert into country (name, shot_name, land_area, population, continent, president) values ('United States', 'US', 183303, 1290893959, 'North America', 'Walter Ford');
+insert into country (name, shot_name, land_area, population, continent, president) values ('China', 'CN', 859104, 541575054, 'Asia', 'Walter Crawford');
+insert into country (name, shot_name, land_area, population, continent, president) values ('Portugal', 'PT', 683546, 1067346158, 'Eurasia', 'Steven Ryan');
+insert into country (name, shot_name, land_area, population, continent, president) values ('Japan', 'JP', 174053, 759776200, 'Eurasia', 'Debra Alvarez');
+insert into country (name, shot_name, land_area, population, continent, president) values ('Canada', 'CA', 945176, 1327777007, 'North America', 'Phyllis Price');
+insert into country (name, shot_name, land_area, population, continent, president) values ('Germany', 'DE', 821929, 582879595, 'Eurasia', 'Johnny Lane');
+insert into country (name, shot_name, land_area, population, continent, president) values ('China', 'CN', 416295, 286933813, 'Eurasia', 'Theresa Lopez');
+insert into country (name, shot_name, land_area, population, continent, president) values ('Ukraine', 'UA', 670720, 755267782, 'Eurasia', 'Victor Cole');
+insert into country (name, shot_name, land_area, population, continent, president) values ('China', 'CN', 685682, 797694635, 'Eurasia', 'Bobby Hunter');

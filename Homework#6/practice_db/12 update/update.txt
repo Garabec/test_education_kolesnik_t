@@ -1,0 +1,7 @@
+Таблица country: изменить количество населения в странах Европы и изменить действующего президента одной из стран.
+
+
+UPDATE country SET population=4000000 WHERE continent='Eurasia';
+
+UPDATE country SET president='Petr Poroshenko' WHERE name='Ukraine';
+
