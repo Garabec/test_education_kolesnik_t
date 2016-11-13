@@ -40,6 +40,7 @@
                  <a class="navbar-brand" href="/index.php?page=gallery">Gallery</a>
                  <a class="navbar-brand" href="/index.php?page=uploadfoto">Upload foto</a>
                  <a class="navbar-brand" href="/index.php?page=comment">Comment</a>
+                 <a class="navbar-brand" href="/index.php?page=book_list">Book</a>
                  <a class="navbar-brand" href="">Page count = <?php if(isset($_SESSION['counts'])){
 
                      echo in_cookie('count');}
@@ -62,6 +63,8 @@
 
 
 </div>
+
+<h1><p class="bg-danger"><?=getFlash()?></p></h1>
 
 <?php include $page  ?>
 

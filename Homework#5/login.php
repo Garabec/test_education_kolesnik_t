@@ -63,6 +63,7 @@ if(requestIsPost()){
     <h1><p class="bg-danger"><?=get('msg',null)?></p></h1>
 
 </div>
+
 <div class="container" >
 
         <div class="col-lg-4"  >
