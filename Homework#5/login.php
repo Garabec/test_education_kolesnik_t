@@ -1,51 +1,53 @@
 <?php
 
 
+//$password = md5('admin@adminka.com');
+//
+//
+//var_dump($password);
+//
+//die();
+
+require 'user.php';
+
+if(requestIsPost()) {
+
+    if (formIsValid()) {
+
+$user=array();
 
 
+        $user['username' ] = post('username');
+        $user['password' ] = post('password');
 
-$csv = array_map('str_getcsv', file('csv/signin.csv'));
-
-array_shift($csv);
-
-
+        $user=findUser( $user['username' ], $user['password' ]   );
 
 
-
-if(requestIsPost()){
-
-      if(formIsValid()){
-
-              $username=$_POST['username'];
-              $password=$_POST['password'];
-
-           foreach ($csv as $temp_check){
-
-               list($user,$passw)=$temp_check;
+        if ($user !== false) {
+            $_SESSION['user'] = $user['email'];
+            $_SESSION['logout']='logout';
+            setFlash('Signed in');
+            redirect('/index.php');
+        }
+        setFlash('User not found');
+        redirect('/index.php?page=login');
 
 
-
-            if($user==$username && $passw==$password ){ $_SESSION['user']=$user;  $_SESSION['logout']='logout';
-
-                redirect('/index.php?page=login&msg=Sign in');}
-
-
-           }
-
-       redirect('/index.php?page=login&msg=User not found');
-
-      }
-
-
-
-
+    }
+    setFlash('Fill the fields');
 }
 
 
+
+
+
+
+
+
+
+
+
 ?>
-
-
-
 
 <?php if(get('msg',null)=='Sign in'): ?>
 
@@ -85,3 +87,92 @@ if(requestIsPost()){
 </div>
 
 <?php endif ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--//-->
+<!--//-->
+<!--//-->
+<!--//-->
+<!--//-->
+<!--//-->
+<!--//$csv = array_map('str_getcsv', file('csv/signin.csv'));-->
+<!--//-->
+<!--//array_shift($csv);-->
+<!--//-->
+<!--//-->
+<!--//-->
+<!--//-->
+<!--//-->
+<!--//if(requestIsPost()){-->
+<!--//-->
+<!--//      if(formIsValid()){-->
+<!--//-->
+<!--//              $username=$_POST['username'];-->
+<!--//              $password=$_POST['password'];-->
+<!--//-->
+<!--//           foreach ($csv as $temp_check){-->
+<!--//-->
+<!--//               list($user,$passw)=$temp_check;-->
+<!--//-->
+<!--//-->
+<!--//-->
+<!--//            if($user==$username && $passw==$password ){ $_SESSION['user']=$user;  $_SESSION['logout']='logout';-->
+<!--//-->
+<!--//                redirect('/index.php?page=login&msg=Sign in');}-->
+<!--//-->
+<!--//-->
+<!--//           }-->
+<!--//-->
+<!--//       redirect('/index.php?page=login&msg=User not found');-->
+<!--//-->
+<!--//      }-->
+<!--//-->
+<!--//-->
+<!--//-->
+<!--//-->
+<!--//}-->
+<!--//-->
+<!--//-->
+<!--//-->
+<!---->
+<!---->
+
+
+
+
+
+
+
+
+
+
+
+
+

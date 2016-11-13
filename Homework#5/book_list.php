@@ -26,6 +26,8 @@ if(get('action',null) == 'delete' && get('id',null)){
 
 if(requestIsPost()) {
 
+if (formIsValid()) {
+
     if (post('id')) {
 
         $id = post('id');
@@ -55,7 +57,7 @@ if(requestIsPost()) {
 
 
     }
-
+}
 }
 
 
