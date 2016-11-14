@@ -21,9 +21,12 @@ try {
 
 
 require 'function.php';
-
 $page=get('page','home').'.php';
 
+ob_start();
+require $page;
+
+$content=ob_get_clean();
 
 require 'header.php';
 
